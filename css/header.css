@@ -1,0 +1,34 @@
+/* .header__wrapper {
+    background-color: var(--first-brand-color);
+} */
+.header {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart__btn {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    /* color: var(--sub-text-color); */
+}
+.cart__btn span {
+    font-size: inherit;
+    color: inherit;
+}
+.cart__btn svg {
+    width: 3rem;
+    margin: 0 1rem;
+    /* fill: var(--sub-text-color); */
+}
+
+@media screen and (min-width: 1024px) {
+    .cart__btn svg {
+        transition: all 0.3s ease-in-out;
+    }
+    .cart__btn:hover svg {
+        transform: scale(1.4);
+    }
+}

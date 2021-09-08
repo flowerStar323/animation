@@ -1,0 +1,49 @@
+.text-section {
+    padding: 5rem 0;
+}
+.text-section .footer__text svg {
+    fill: #000;
+}
+.text-section .text {
+    margin-bottom: 1.5rem;
+}
+.text-section .title {
+    margin-bottom: 3rem;
+}
+.text-section .bold {
+    font-family: var(--title-font);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.text-section .up {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+.text-section .italic {
+    font-style: italic;
+}
+.text-section .link , .link {
+   color: var(--link-color);
+   position: relative;
+}
+.text-section .link:after, .link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: .1rem;
+    left: 50%;
+    position: absolute;
+    background: var(--link-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.text-section .link:hover:after, .link:hover:after {
+    width: 100%; 
+  left: 0; 
+}
+@media screen and (min-width: 768px) {
+    .text-section {
+        padding: 15rem 0;
+    }
+}
